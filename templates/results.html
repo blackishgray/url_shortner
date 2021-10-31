@@ -1,0 +1,16 @@
+{% extends 'layout.html' %} 
+<!DOCTYPE html>
+<html>
+<head>
+	{% block title %}<title>Index</title>{% endblock %}
+
+</head>
+<body class="body">
+	{% block body %}
+	<div align="center" id="url_res_div">
+		 <h3>http://127.0.0.1:5000/{{short_url_display}}</h3>
+	 <a href="http://127.0.0.1:5000/">BACK TO HOME</a>
+	</div>
+	{% endblock %}
+</body>
+</html>

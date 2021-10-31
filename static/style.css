@@ -1,0 +1,44 @@
+body {
+	background-color: lightpink;
+}
+
+.row{
+	justify-content: center;
+}
+
+#login-form{
+	justify-content: center;
+}
+
+#btnsubmitlogin{
+	margin-top: 1em;
+}
+
+label {
+	display: inline-flex;
+	text-align: right;
+}
+
+div{
+	margin : 10px
+}
+
+#url_form{
+	padding-left: 16rem;
+}
+/*/*
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+*\
+
+#u*/
+
+#url_res_div{
+	position: absolute;
+	padding-left: 38%;
+	padding-top: 23%;
+}

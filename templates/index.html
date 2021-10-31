@@ -1,0 +1,35 @@
+{% extends 'layout.html' %} 
+<!DOCTYPE html>
+<html>
+<head>
+	{% block title %}<title>Index</title>{% endblock %}
+
+</head>
+<body class="body">
+	{% block body %} 
+
+	<div class="container mt-5">
+		<h2 class="text-center alert alert-info"> URL Shortner</h2>
+	</div>
+	<div>
+		<div class="container mt-5 login-form">
+			<div class="col-sm-9" id="url_form">
+				<form method="POST" action="{{ url_for('url_process') }}">
+					<div class="form-group">
+						<label for="username">URL:</label>
+						<input type="text" name="url_pro" id="url_pro" class="form-control" placeholder="https://example.com/" pattern="https://.*" required>
+					</div>
+					
+					<div class="text-center">
+						<input class="btn btn-primary" type='submit' name='submit' value='Submit'>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	{% if hort_url_display %}
+	<h1>{{hort_url_display}}</h1>
+	{% endif %}
+	{% endblock %}
+</body>
+</html>
